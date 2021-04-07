@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <RootNamespace>Utils.Maybe</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="BaseTypes.fs" />
+    <Compile Include="Operators.fs" />
+    <Compile Include="MaybeMonad.fs" />
+    <Compile Include="Maybe.fs" />
+    <Compile Include="MaybeSeq.fs" />
+    <Compile Include="MaybeList.fs" />
+    <Content Include="Directory.Build.props" />
+  </ItemGroup>
+
+</Project>

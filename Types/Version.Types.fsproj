@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <RootNamespace>Version.DotNet.Types</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="GeneralTypes.fs" />
+    <Compile Include="ListUtils.fs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\FileSystem\FileSystem.fsproj" />
+    <ProjectReference Include="..\Maybe\Maybe.fsproj" />
+    <ProjectReference Include="..\Printer\Printer.fsproj" />
+  </ItemGroup>
+
+</Project>

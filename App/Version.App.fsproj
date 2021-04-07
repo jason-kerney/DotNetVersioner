@@ -1,0 +1,39 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <AssemblyName>Version</AssemblyName>
+    <RootNamespace>Version.Console</RootNamespace>
+    <PackAsTool>true</PackAsTool>
+    <ToolCommandName>version</ToolCommandName>
+    <PackageOutputPath>./nupkg</PackageOutputPath>
+
+  </PropertyGroup>
+
+  <ItemGroup>
+    <AssemblyAttribute Include="WhatsYourVersion.BuildDateAttribute">
+      <_Parameter1>$([System.DateTime]::UtcNow.ToString("yyyyMMddHHmmss"))</_Parameter1>
+    </AssemblyAttribute>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="Arguments.fs" />
+    <Compile Include="Program.fs" />
+    <Content Include="Directory.Build.props" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Argu" Version="6.1.1" />
+    <PackageReference Include="whats-your-version" Version="2.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Git\Git.fsproj" />
+    <ProjectReference Include="..\Lib\Version.Lib.fsproj" />
+    <ProjectReference Include="..\Maybe\Maybe.fsproj" />
+    <ProjectReference Include="..\Strings\Strings.fsproj" />
+    <ProjectReference Include="..\Types\Version.Types.fsproj" />
+  </ItemGroup>
+
+</Project>

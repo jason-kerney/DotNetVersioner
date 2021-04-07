@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <RootNamespace>Utils.Strings</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="Library.fs" />
+    <Content Include="Directory.Build.props" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Maybe\Maybe.fsproj" />
+  </ItemGroup>
+
+</Project>

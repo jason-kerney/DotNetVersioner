@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <RootNamespace>Version.DotNet</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="Types.fs" />
+    <Compile Include="Parser.fs" />
+    <Compile Include="Finders.BuildProps.fs" />
+    <Compile Include="UpdateCombiner.fs" />
+    <Compile Include="UpdateHandler.fs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Maybe\Maybe.fsproj" />
+    <ProjectReference Include="..\Strings\Strings.fsproj" />
+    <ProjectReference Include="..\Types\Version.Types.fsproj" />
+  </ItemGroup>
+
+</Project>
