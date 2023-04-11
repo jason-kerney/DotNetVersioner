@@ -110,7 +110,7 @@ let private getVersionUpdateInfo rootDir (fs: #IFileSystemAccessor) (results: Pa
         }, projects
 
 let parseArgs rootDir fs (args: string []) =
-    let parser = ArgumentParser.Create<CommandArguments>(programName = "Version")
+    let parser = ArgumentParser.Create<CommandArguments> (programName = "DotVersion")
     let results = parser.ParseCommandLine(inputs = args, raiseOnUsage = false)
     
     if results.Contains Version then
