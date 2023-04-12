@@ -1,5 +1,5 @@
 ```
-USAGE: Version [--help] [--version] [--set-version <version>] [--major] [--minor] [--patch] [--subpatch] [--dont-add] [--prerelease <string>] [<string>...]
+USAGE: DotVersion [--help] [--version] [--set-version <version>] [--major] [--minor] [--patch] [--subpatch] [--dont-add] [--prerelease <string>] [<string>...]
 
 PROJECTS:
 
